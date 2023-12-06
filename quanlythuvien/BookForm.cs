@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace quanlythuvien
 {
-    public partial class ReadersForm : Form
+    public partial class BookForm : Form
     {
-        public ReadersForm()
+        public BookForm()
         {
             InitializeComponent();
-        }
-
-        private void ReadersForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

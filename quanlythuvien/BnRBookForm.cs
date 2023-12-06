@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace quanlythuvien
 {
-    public partial class Employees : Form
+    public partial class Borrow_ReturnBook : Form
     {
-        public Employees()
+        public Borrow_ReturnBook()
         {
             InitializeComponent();
         }

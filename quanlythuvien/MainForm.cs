@@ -29,6 +29,8 @@ namespace quanlythuvien
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
             Mainpanel.Controls.Add(childForm);
+            Mainpanel.BackgroundImage = null;
+            label2.Visible = false;
             childForm.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
@@ -51,60 +53,34 @@ namespace quanlythuvien
             }
         }
 
-        private void danhMụcSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        private void độcGiảToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-
-        }
-
-        private void nhàXuấtBảnToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void quảnLýSáchToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+            OpenChildForm(new ReaderForm());
         }
 
         private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new EmployeesForm());
+            OpenChildForm(new EmployeeForm());
         }
 
-        private void độcGiảToolStripMenuItem_Click(object sender, EventArgs e)
+        private void tácGiảToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new ReadersForm());
+            OpenChildForm(new AuthorForm());
         }
 
-        private void mượnSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        private void nhàXuấtBảnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new PublisherForm());
         }
 
-        private void tìmSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        private void quảnLýSáchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new BookForm());
         }
 
-        private void tìmKiếmToolStripMenuItem_Click(object sender, EventArgs e)
+        private void thểLoạiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void tìmĐộcGiảToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void thốngKêSáchToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void thốngKêĐộcGiảToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+            OpenChildForm(new GenreForm());
         }
     }
 }
