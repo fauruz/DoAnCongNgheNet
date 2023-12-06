@@ -109,7 +109,7 @@
             // 
             // txtPublisherName
             // 
-            this.txtPublisherName.Location = new System.Drawing.Point(240, 90);
+            this.txtPublisherName.Location = new System.Drawing.Point(260, 90);
             this.txtPublisherName.Margin = new System.Windows.Forms.Padding(4);
             this.txtPublisherName.Name = "txtPublisherName";
             this.txtPublisherName.Size = new System.Drawing.Size(231, 26);
@@ -119,7 +119,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(64, 90);
+            this.label3.Location = new System.Drawing.Point(60, 90);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(181, 25);
@@ -128,7 +128,7 @@
             // 
             // txtPublisherId
             // 
-            this.txtPublisherId.Location = new System.Drawing.Point(240, 39);
+            this.txtPublisherId.Location = new System.Drawing.Point(260, 40);
             this.txtPublisherId.Margin = new System.Windows.Forms.Padding(4);
             this.txtPublisherId.Name = "txtPublisherId";
             this.txtPublisherId.Size = new System.Drawing.Size(231, 26);
@@ -138,7 +138,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(64, 39);
+            this.label2.Location = new System.Drawing.Point(60, 40);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(173, 25);
@@ -203,7 +203,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(807, 725);
+            this.ClientSize = new System.Drawing.Size(789, 676);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvPublisher);
             this.Controls.Add(this.label1);

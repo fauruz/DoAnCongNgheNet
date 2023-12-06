@@ -82,5 +82,10 @@ namespace quanlythuvien
         {
             OpenChildForm(new GenreForm());
         }
+
+        private void mượnSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new BorrowForm());
+        }
     }
 }

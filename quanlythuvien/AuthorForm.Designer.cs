@@ -121,7 +121,7 @@
             // 
             // txtAuthorName
             // 
-            this.txtAuthorName.Location = new System.Drawing.Point(240, 90);
+            this.txtAuthorName.Location = new System.Drawing.Point(260, 90);
             this.txtAuthorName.Margin = new System.Windows.Forms.Padding(4);
             this.txtAuthorName.Name = "txtAuthorName";
             this.txtAuthorName.Size = new System.Drawing.Size(231, 26);
@@ -131,7 +131,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(64, 90);
+            this.label3.Location = new System.Drawing.Point(60, 90);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 25);
@@ -140,7 +140,7 @@
             // 
             // txtAuthorId
             // 
-            this.txtAuthorId.Location = new System.Drawing.Point(240, 39);
+            this.txtAuthorId.Location = new System.Drawing.Point(260, 39);
             this.txtAuthorId.Margin = new System.Windows.Forms.Padding(4);
             this.txtAuthorId.Name = "txtAuthorId";
             this.txtAuthorId.Size = new System.Drawing.Size(231, 26);
@@ -150,7 +150,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(64, 39);
+            this.label2.Location = new System.Drawing.Point(60, 39);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 25);

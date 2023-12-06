@@ -111,7 +111,7 @@
             // dtpEmployeeDOB
             // 
             this.dtpEmployeeDOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpEmployeeDOB.Location = new System.Drawing.Point(240, 140);
+            this.dtpEmployeeDOB.Location = new System.Drawing.Point(260, 140);
             this.dtpEmployeeDOB.Name = "dtpEmployeeDOB";
             this.dtpEmployeeDOB.Size = new System.Drawing.Size(136, 26);
             this.dtpEmployeeDOB.TabIndex = 45;
@@ -122,7 +122,7 @@
             this.cbbEmployee.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.cbbEmployee.Location = new System.Drawing.Point(240, 190);
+            this.cbbEmployee.Location = new System.Drawing.Point(260, 190);
             this.cbbEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.cbbEmployee.Name = "cbbEmployee";
             this.cbbEmployee.Size = new System.Drawing.Size(103, 28);
@@ -132,7 +132,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.Location = new System.Drawing.Point(64, 192);
+            this.label7.Location = new System.Drawing.Point(60, 190);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(91, 25);
@@ -204,7 +204,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.Location = new System.Drawing.Point(64, 141);
+            this.label4.Location = new System.Drawing.Point(60, 140);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(108, 25);
@@ -213,7 +213,7 @@
             // 
             // txtEmployeeName
             // 
-            this.txtEmployeeName.Location = new System.Drawing.Point(240, 90);
+            this.txtEmployeeName.Location = new System.Drawing.Point(260, 90);
             this.txtEmployeeName.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmployeeName.Name = "txtEmployeeName";
             this.txtEmployeeName.Size = new System.Drawing.Size(231, 26);
@@ -223,7 +223,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(64, 90);
+            this.label3.Location = new System.Drawing.Point(60, 90);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(104, 25);
@@ -232,7 +232,7 @@
             // 
             // txtEmployeeId
             // 
-            this.txtEmployeeId.Location = new System.Drawing.Point(240, 39);
+            this.txtEmployeeId.Location = new System.Drawing.Point(260, 40);
             this.txtEmployeeId.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmployeeId.Name = "txtEmployeeId";
             this.txtEmployeeId.Size = new System.Drawing.Size(231, 26);
@@ -242,14 +242,14 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(64, 39);
+            this.label2.Location = new System.Drawing.Point(60, 40);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "Mã nhân viên";
             // 
-            // EmployeesForm
+            // EmployeeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -258,7 +258,7 @@
             this.Controls.Add(this.dgvEmployee);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
-            this.Name = "EmployeesForm";
+            this.Name = "EmployeeForm";
             this.Text = "Employee";
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
             this.groupBox1.ResumeLayout(false);
