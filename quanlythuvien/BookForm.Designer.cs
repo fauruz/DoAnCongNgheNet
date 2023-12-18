@@ -148,6 +148,7 @@
             this.txtPublishTime.Name = "txtPublishTime";
             this.txtPublishTime.Size = new System.Drawing.Size(231, 26);
             this.txtPublishTime.TabIndex = 43;
+            this.txtPublishTime.TextChanged += new System.EventHandler(this.txtPublishTime_TextChanged);
             // 
             // label4
             // 
@@ -162,7 +163,6 @@
             // 
             // btnReview
             // 
-            this.btnReview.Enabled = false;
             this.btnReview.Location = new System.Drawing.Point(579, 238);
             this.btnReview.Margin = new System.Windows.Forms.Padding(4);
             this.btnReview.Name = "btnReview";
@@ -170,6 +170,7 @@
             this.btnReview.TabIndex = 41;
             this.btnReview.Text = "Xem";
             this.btnReview.UseVisualStyleBackColor = true;
+            this.btnReview.Click += new System.EventHandler(this.btnReview_Click);
             // 
             // btnExit
             // 
@@ -180,6 +181,7 @@
             this.btnExit.TabIndex = 40;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnDelete
             // 
@@ -190,6 +192,7 @@
             this.btnDelete.TabIndex = 39;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -200,6 +203,7 @@
             this.btnUpdate.TabIndex = 38;
             this.btnUpdate.Text = "Sửa";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAdd
             // 
@@ -210,6 +214,7 @@
             this.btnAdd.TabIndex = 37;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // label5
             // 
@@ -268,6 +273,7 @@
             this.dgvBook.RowHeadersWidth = 51;
             this.dgvBook.Size = new System.Drawing.Size(753, 234);
             this.dgvBook.TabIndex = 60;
+            this.dgvBook.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBook_CellContentClick);
             // 
             // label1
             // 
@@ -302,6 +308,7 @@
             this.Controls.Add(this.label6);
             this.Name = "BookForm";
             this.Text = "BookForm";
+            this.Load += new System.EventHandler(this.BookForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBook)).EndInit();

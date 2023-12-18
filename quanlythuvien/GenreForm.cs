@@ -37,7 +37,7 @@ namespace quanlythuvien
             }
             return true;
         }
-        private THELOAI storeTHELOAI()
+        private THELOAI storeTheLoai()
         {
             THELOAI tl = new THELOAI();
             tl.MATL = txtGenreId.Text;
@@ -49,7 +49,7 @@ namespace quanlythuvien
         {
             if (checkValid())
             {
-                THELOAI tl = storeTHELOAI();
+                THELOAI tl = storeTheLoai();
                 db.THELOAIs.InsertOnSubmit(tl);
                 db.SubmitChanges();
                 MessageBox.Show("Thêm thành công!");
