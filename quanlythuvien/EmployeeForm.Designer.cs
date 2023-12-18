@@ -33,7 +33,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dtpEmployeeDOB = new System.Windows.Forms.DateTimePicker();
-            this.cbbEmployee = new System.Windows.Forms.ComboBox();
+            this.cbbGender = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnReview = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -59,6 +59,7 @@
             this.dgvEmployee.RowHeadersWidth = 51;
             this.dgvEmployee.Size = new System.Drawing.Size(753, 234);
             this.dgvEmployee.TabIndex = 48;
+            this.dgvEmployee.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployee_CellContentClick);
             // 
             // label1
             // 
@@ -85,7 +86,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dtpEmployeeDOB);
-            this.groupBox1.Controls.Add(this.cbbEmployee);
+            this.groupBox1.Controls.Add(this.cbbGender);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.btnReview);
             this.groupBox1.Controls.Add(this.btnExit);
@@ -116,17 +117,17 @@
             this.dtpEmployeeDOB.Size = new System.Drawing.Size(136, 26);
             this.dtpEmployeeDOB.TabIndex = 45;
             // 
-            // cbbEmployee
+            // cbbGender
             // 
-            this.cbbEmployee.FormattingEnabled = true;
-            this.cbbEmployee.Items.AddRange(new object[] {
+            this.cbbGender.FormattingEnabled = true;
+            this.cbbGender.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.cbbEmployee.Location = new System.Drawing.Point(260, 190);
-            this.cbbEmployee.Margin = new System.Windows.Forms.Padding(4);
-            this.cbbEmployee.Name = "cbbEmployee";
-            this.cbbEmployee.Size = new System.Drawing.Size(103, 28);
-            this.cbbEmployee.TabIndex = 43;
+            this.cbbGender.Location = new System.Drawing.Point(260, 190);
+            this.cbbGender.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbGender.Name = "cbbGender";
+            this.cbbGender.Size = new System.Drawing.Size(103, 28);
+            this.cbbGender.TabIndex = 43;
             // 
             // label7
             // 
@@ -141,7 +142,6 @@
             // 
             // btnReview
             // 
-            this.btnReview.Enabled = false;
             this.btnReview.Location = new System.Drawing.Point(579, 238);
             this.btnReview.Margin = new System.Windows.Forms.Padding(4);
             this.btnReview.Name = "btnReview";
@@ -149,6 +149,7 @@
             this.btnReview.TabIndex = 41;
             this.btnReview.Text = "Xem";
             this.btnReview.UseVisualStyleBackColor = true;
+            this.btnReview.Click += new System.EventHandler(this.btnReview_Click);
             // 
             // btnExit
             // 
@@ -159,6 +160,7 @@
             this.btnExit.TabIndex = 40;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnDelete
             // 
@@ -169,6 +171,7 @@
             this.btnDelete.TabIndex = 39;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -179,6 +182,7 @@
             this.btnUpdate.TabIndex = 38;
             this.btnUpdate.Text = "Sửa";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAdd
             // 
@@ -189,6 +193,7 @@
             this.btnAdd.TabIndex = 37;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // label5
             // 
@@ -260,6 +265,7 @@
             this.Controls.Add(this.label6);
             this.Name = "EmployeeForm";
             this.Text = "Employee";
+            this.Load += new System.EventHandler(this.EmployeeForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -275,7 +281,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DateTimePicker dtpEmployeeDOB;
-        private System.Windows.Forms.ComboBox cbbEmployee;
+        private System.Windows.Forms.ComboBox cbbGender;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnReview;
         private System.Windows.Forms.Button btnExit;
