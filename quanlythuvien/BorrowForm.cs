@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace quanlythuvien
 {
-    public partial class SignInForm : Form
+    public partial class BorrowForm : Form
     {
-        public SignInForm()
+        public BorrowForm()
         {
             InitializeComponent();
         }

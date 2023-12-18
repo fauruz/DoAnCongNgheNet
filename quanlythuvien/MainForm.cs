@@ -36,14 +36,6 @@ namespace quanlythuvien
             childForm.Show();
 
         }
-        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Visible = false;
-            //Form m = new Formchinh();
-            //m.Hide();
-            Form f = new SignInForm();
-            f.Show();
-        }
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DialogResult = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
