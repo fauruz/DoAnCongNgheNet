@@ -36,10 +36,9 @@
             this.btnStAdd = new System.Windows.Forms.Button();
             this.dgvDetailBr = new System.Windows.Forms.DataGridView();
             this.label11 = new System.Windows.Forms.Label();
-            this.DTRt = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.DTBr = new System.Windows.Forms.DateTimePicker();
-            this.CbbBookId = new System.Windows.Forms.ComboBox();
+            this.CbbBook = new System.Windows.Forms.ComboBox();
             this.cbbBrId = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -57,6 +56,8 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.cbbReader = new System.Windows.Forms.ComboBox();
             this.cbbEmployee = new System.Windows.Forms.ComboBox();
+            this.cbbDay = new System.Windows.Forms.ComboBox();
+            this.btnStReview = new System.Windows.Forms.Button();
             this.tab2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetailBr)).BeginInit();
             this.tpBorrow.SuspendLayout();
@@ -66,6 +67,8 @@
             // 
             // tab2
             // 
+            this.tab2.Controls.Add(this.btnStReview);
+            this.tab2.Controls.Add(this.cbbDay);
             this.tab2.Controls.Add(this.cbbState);
             this.tab2.Controls.Add(this.label5);
             this.tab2.Controls.Add(this.btnReturn);
@@ -73,10 +76,9 @@
             this.tab2.Controls.Add(this.btnStAdd);
             this.tab2.Controls.Add(this.dgvDetailBr);
             this.tab2.Controls.Add(this.label11);
-            this.tab2.Controls.Add(this.DTRt);
             this.tab2.Controls.Add(this.label6);
             this.tab2.Controls.Add(this.DTBr);
-            this.tab2.Controls.Add(this.CbbBookId);
+            this.tab2.Controls.Add(this.CbbBook);
             this.tab2.Controls.Add(this.cbbBrId);
             this.tab2.Controls.Add(this.label8);
             this.tab2.Controls.Add(this.label9);
@@ -92,10 +94,11 @@
             // 
             // cbbState
             // 
+            this.cbbState.Enabled = false;
             this.cbbState.FormattingEnabled = true;
             this.cbbState.Items.AddRange(new object[] {
-            "Đang còn",
-            "Đã mượn"});
+            "Đang mượn",
+            "Hết hạn mượn"});
             this.cbbState.Location = new System.Drawing.Point(220, 232);
             this.cbbState.Margin = new System.Windows.Forms.Padding(4);
             this.cbbState.Name = "cbbState";
@@ -115,23 +118,25 @@
             // 
             // btnReturn
             // 
-            this.btnReturn.Location = new System.Drawing.Point(562, 303);
+            this.btnReturn.Location = new System.Drawing.Point(560, 303);
             this.btnReturn.Margin = new System.Windows.Forms.Padding(4);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(100, 39);
             this.btnReturn.TabIndex = 21;
             this.btnReturn.Text = "Trả sách";
             this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
             // btnExtend
             // 
-            this.btnExtend.Location = new System.Drawing.Point(336, 303);
+            this.btnExtend.Location = new System.Drawing.Point(410, 303);
             this.btnExtend.Margin = new System.Windows.Forms.Padding(4);
             this.btnExtend.Name = "btnExtend";
             this.btnExtend.Size = new System.Drawing.Size(100, 39);
             this.btnExtend.TabIndex = 20;
             this.btnExtend.Text = "Gia hạn";
             this.btnExtend.UseVisualStyleBackColor = true;
+            this.btnExtend.Click += new System.EventHandler(this.btnExtend_Click);
             // 
             // btnStAdd
             // 
@@ -142,6 +147,7 @@
             this.btnStAdd.TabIndex = 19;
             this.btnStAdd.Text = "Thêm ";
             this.btnStAdd.UseVisualStyleBackColor = true;
+            this.btnStAdd.Click += new System.EventHandler(this.btnStAdd_Click);
             // 
             // dgvDetailBr
             // 
@@ -152,6 +158,7 @@
             this.dgvDetailBr.RowHeadersWidth = 51;
             this.dgvDetailBr.Size = new System.Drawing.Size(737, 240);
             this.dgvDetailBr.TabIndex = 18;
+            this.dgvDetailBr.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetailBr_CellContentClick);
             // 
             // label11
             // 
@@ -164,15 +171,6 @@
             this.label11.TabIndex = 16;
             this.label11.Text = "Tình trạng sách";
             // 
-            // DTRt
-            // 
-            this.DTRt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DTRt.Location = new System.Drawing.Point(601, 172);
-            this.DTRt.Margin = new System.Windows.Forms.Padding(4);
-            this.DTRt.Name = "DTRt";
-            this.DTRt.Size = new System.Drawing.Size(160, 22);
-            this.DTRt.TabIndex = 15;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -180,12 +178,13 @@
             this.label6.Location = new System.Drawing.Point(424, 167);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(160, 29);
+            this.label6.Size = new System.Drawing.Size(178, 29);
             this.label6.TabIndex = 14;
-            this.label6.Text = "Ngày hẹn trả";
+            this.label6.Text = "Số ngày mượn";
             // 
             // DTBr
             // 
+            this.DTBr.Enabled = false;
             this.DTBr.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DTBr.Location = new System.Drawing.Point(219, 170);
             this.DTBr.Margin = new System.Windows.Forms.Padding(4);
@@ -194,14 +193,14 @@
             this.DTBr.TabIndex = 13;
             this.DTBr.Value = new System.DateTime(2020, 8, 11, 23, 36, 38, 0);
             // 
-            // CbbBookId
+            // CbbBook
             // 
-            this.CbbBookId.FormattingEnabled = true;
-            this.CbbBookId.Location = new System.Drawing.Point(601, 106);
-            this.CbbBookId.Margin = new System.Windows.Forms.Padding(4);
-            this.CbbBookId.Name = "CbbBookId";
-            this.CbbBookId.Size = new System.Drawing.Size(160, 24);
-            this.CbbBookId.TabIndex = 12;
+            this.CbbBook.FormattingEnabled = true;
+            this.CbbBook.Location = new System.Drawing.Point(601, 106);
+            this.CbbBook.Margin = new System.Windows.Forms.Padding(4);
+            this.CbbBook.Name = "CbbBook";
+            this.CbbBook.Size = new System.Drawing.Size(160, 24);
+            this.CbbBook.TabIndex = 12;
             // 
             // cbbBrId
             // 
@@ -230,9 +229,9 @@
             this.label9.Location = new System.Drawing.Point(424, 108);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(109, 29);
+            this.label9.Size = new System.Drawing.Size(71, 29);
             this.label9.TabIndex = 9;
-            this.label9.Text = "Mã sách";
+            this.label9.Text = "Sách";
             // 
             // label10
             // 
@@ -388,6 +387,34 @@
             this.cbbEmployee.Size = new System.Drawing.Size(231, 28);
             this.cbbEmployee.TabIndex = 64;
             // 
+            // cbbDay
+            // 
+            this.cbbDay.FormattingEnabled = true;
+            this.cbbDay.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.cbbDay.Location = new System.Drawing.Point(601, 170);
+            this.cbbDay.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbDay.Name = "cbbDay";
+            this.cbbDay.Size = new System.Drawing.Size(160, 24);
+            this.cbbDay.TabIndex = 53;
+            // 
+            // btnStReview
+            // 
+            this.btnStReview.Location = new System.Drawing.Point(260, 303);
+            this.btnStReview.Margin = new System.Windows.Forms.Padding(4);
+            this.btnStReview.Name = "btnStReview";
+            this.btnStReview.Size = new System.Drawing.Size(100, 39);
+            this.btnStReview.TabIndex = 54;
+            this.btnStReview.Text = "Xem";
+            this.btnStReview.UseVisualStyleBackColor = true;
+            this.btnStReview.Click += new System.EventHandler(this.btnStReview_Click);
+            // 
             // BorrowForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -416,10 +443,9 @@
         private System.Windows.Forms.Button btnStAdd;
         private System.Windows.Forms.DataGridView dgvDetailBr;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker DTRt;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker DTBr;
-        private System.Windows.Forms.ComboBox CbbBookId;
+        private System.Windows.Forms.ComboBox CbbBook;
         private System.Windows.Forms.ComboBox cbbBrId;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -439,5 +465,7 @@
         private System.Windows.Forms.ComboBox cbbState;
         private System.Windows.Forms.ComboBox cbbEmployee;
         private System.Windows.Forms.ComboBox cbbReader;
+        private System.Windows.Forms.ComboBox cbbDay;
+        private System.Windows.Forms.Button btnStReview;
     }
 }
