@@ -31,10 +31,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.taikhoan = new System.Windows.Forms.TextBox();
-            this.matkhau = new System.Windows.Forms.TextBox();
-            this.dannhap = new System.Windows.Forms.Button();
-            this.thoat = new System.Windows.Forms.Button();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.btnSignIn = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -70,56 +70,56 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Mật khẩu";
             // 
-            // taikhoan
+            // txtUsername
             // 
-            this.taikhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.taikhoan.Location = new System.Drawing.Point(265, 138);
-            this.taikhoan.Margin = new System.Windows.Forms.Padding(4);
-            this.taikhoan.Name = "taikhoan";
-            this.taikhoan.Size = new System.Drawing.Size(303, 26);
-            this.taikhoan.TabIndex = 4;
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(265, 138);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(303, 26);
+            this.txtUsername.TabIndex = 4;
             // 
-            // matkhau
+            // txtPassword
             // 
-            this.matkhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.matkhau.Location = new System.Drawing.Point(265, 243);
-            this.matkhau.Margin = new System.Windows.Forms.Padding(4);
-            this.matkhau.Name = "matkhau";
-            this.matkhau.PasswordChar = '*';
-            this.matkhau.Size = new System.Drawing.Size(303, 26);
-            this.matkhau.TabIndex = 5;
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(265, 243);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(303, 26);
+            this.txtPassword.TabIndex = 5;
             // 
-            // dannhap
+            // btnSignIn
             // 
-            this.dannhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dannhap.Location = new System.Drawing.Point(180, 354);
-            this.dannhap.Margin = new System.Windows.Forms.Padding(4);
-            this.dannhap.Name = "dannhap";
-            this.dannhap.Size = new System.Drawing.Size(123, 47);
-            this.dannhap.TabIndex = 6;
-            this.dannhap.Text = "Đăng nhập";
-            this.dannhap.UseVisualStyleBackColor = true;
+            this.btnSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignIn.Location = new System.Drawing.Point(180, 354);
+            this.btnSignIn.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSignIn.Name = "btnSignIn";
+            this.btnSignIn.Size = new System.Drawing.Size(123, 47);
+            this.btnSignIn.TabIndex = 6;
+            this.btnSignIn.Text = "Đăng nhập";
+            this.btnSignIn.UseVisualStyleBackColor = true;
             // 
-            // thoat
+            // btnExit
             // 
-            this.thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.thoat.Location = new System.Drawing.Point(458, 354);
-            this.thoat.Margin = new System.Windows.Forms.Padding(4);
-            this.thoat.Name = "thoat";
-            this.thoat.Size = new System.Drawing.Size(123, 47);
-            this.thoat.TabIndex = 7;
-            this.thoat.Text = "Thoát";
-            this.thoat.UseVisualStyleBackColor = true;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(458, 354);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(123, 47);
+            this.btnExit.TabIndex = 7;
+            this.btnExit.Text = "Thoát";
+            this.btnExit.UseVisualStyleBackColor = true;
             // 
             // SignInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.thoat);
-            this.Controls.Add(this.dannhap);
-            this.Controls.Add(this.matkhau);
-            this.Controls.Add(this.taikhoan);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnSignIn);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -135,9 +135,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox taikhoan;
-        private System.Windows.Forms.TextBox matkhau;
-        private System.Windows.Forms.Button dannhap;
-        private System.Windows.Forms.Button thoat;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Button btnSignIn;
+        private System.Windows.Forms.Button btnExit;
     }
 }
